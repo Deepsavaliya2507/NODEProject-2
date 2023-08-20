@@ -9,6 +9,7 @@ const app = express();
 /** upload image */
 // app.use(express.static(`./public`));
 
+app.use("/v1", routes);
 
 /** whenever route not created and you try to use that route then throw error. */
 app.use((req, res, next) => {
